@@ -1,0 +1,17 @@
+Index:
+    buttons -
+        Edit Deck:  present deck - show all the cards in the deck on a single page
+                    "front" is a permalink to CardDetail
+        Shuffle:  present CardTest page
+
+CardTest:
+    front:
+        buttons - flip
+    rear:
+        buttons - keep in deck, knew this one
+
+CardDetail:
+    label - front
+    textarea - rear
+    button - display: changes from "Test This" (green, display: True) to
+            "Don't Test" (red, display: False)

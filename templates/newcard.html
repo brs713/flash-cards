@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>New Card</h1>
+<hr>
+
+<form method="post">
+    <label>
+        <div>front</div>
+        <input type="text" name="front" value="{{ front }}">
+    </label>
+    <label>
+        <div>rear</div>
+        <textarea name="rear">{{ rear }}</textarea>
+    </label>
+
+    <input type="submit"><span class="error">{{ error }}</span>
+
+</form>
+
+{% endblock %}
